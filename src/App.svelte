@@ -1,6 +1,8 @@
 <script>
-  import DiagramComponent from "./DiagramComponent.svelte";
+  import DiagramEditor from "./DiagramEditor.svelte";
   import { getData } from "./data.js";
+
+  const data = getData();
 </script>
 
-<DiagramComponent  data={getData()}/>
+<DiagramEditor  data={data}/>
